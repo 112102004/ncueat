@@ -1,0 +1,121 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: #fff0f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fdf6f8;
+  border: 2px solid #d2a5b0;
+  border-radius: 16px;
+  padding: 24px 40px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(210,165,176,0.2);
+  max-width: 480px;
+  width: 90vw;
+}
+
+h1 {
+  color: #7e5a69;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.wheel-container {
+  margin: 0 auto 24px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+#wheel {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(183, 120, 129, 0.8);
+}
+
+#pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  color: #b67881;
+  user-select: none;
+}
+
+#spinBtn {
+  background-color: #b67881;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 36px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px #a1616c;
+  transition: background-color 0.3s ease;
+  margin-bottom: 16px;
+}
+
+#spinBtn:hover:enabled {
+  background-color: #9f5d66;
+}
+
+#spinBtn:disabled {
+  background-color: #d3b3b9;
+  cursor: not-allowed;
+}
+
+#resultContainer {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+#resultText {
+  font-weight: 700;
+  color: #b67881;
+  font-size: 24px;
+  display: inline-block;
+  min-width: 150px;
+  transition: opacity 0.3s ease;
+}
+
+#confirmBtn, #excludeBtn {
+  background-color: #b67881;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 24px;
+  margin: 8px 12px 0 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px #a1616c;
+  transition: background-color 0.3s ease;
+}
+
+#confirmBtn:hover {
+  background-color: #9f5d66;
+}
+
+#excludeBtn:hover {
+  background-color: #84545a;
+}
+
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  pointer-events: none;
+  user-select: none;
+}

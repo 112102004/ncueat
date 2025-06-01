@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>中央大學吃什麼轉盤</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>中央大學吃什麼轉盤</h1>
+    <div class="wheel-container">
+      <canvas id="wheel" width="400" height="400"></canvas>
+      
+      <div id="pointer">&#9650;</div>
+    </div>
+    <button id="spinBtn">轉動！</button>
+
+    <div id="resultContainer" class="hidden">
+      <p>今天吃<span id="resultText"></span>!</p>
+      <button id="confirmBtn">✅ 我吃這個</button>
+      <button id="excludeBtn">❌ 我不想吃這個</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
